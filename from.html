@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+    <h2>Buat akun baru</h2>
+    <form action="post.php" method="POST">
+        <label for="first-name">Nama depan:</label>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+
+        <label for="last-name">Nama belakang:</label>
+        <input type="text" id="last-name" name="last-name" required><br><br>
+
+        <label>Jenis kelamin:</label><br>
+        <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+        <label for="male">Laki-Laki</label><br>
+        <input type="radio" id="female" name="gender" value="Perempuan" required>
+        <label for="female">Perempuan</label><br><br>
+
+        <label for="nationality">Kebangsaan:</label>
+        <select id="nationality" name="nationality">
+            <option value="Indonesia">Indonesia</option>
+            <option value="Indonesia">Amerika</option>
+            <option value="Indonesia">Ingrris</option>
+            <!-- Add more nationality options here -->
+        </select><br><br>
+
+        <label for="languange">Bahasa yang Diucapkan:</label>
+        <input type="checkbox" id="BahasaIndonesia" name="languange[]" value="Bahasa-Indonesia" />
+        <label for="bahasaindonesia">Bahasa Indonesia</label><br>
+        <input type="checkbox" id="Bahasa Inggris" name="languange[]" value="Bahasa-Inggris" />
+        <label for="bahasainggris">Bahasa Inggris</label><br>
+        <input type="checkbox" id="other" name="languange[]" value="Other" />
+        <label for="other">Other</label><br>
+
+        <p>Bio</p>
+        <textarea id="bio" name="bio" rows="10" cols="30"></textarea>
+
+        <input type="submit" value="Submit">
+    </from>
+</body>
+</html>
